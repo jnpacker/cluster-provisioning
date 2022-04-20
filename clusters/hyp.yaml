@@ -1,0 +1,14 @@
+apiVersion: cluster.open-cluster-management.io/v1alpha1
+kind: HypershiftDeployment
+metadata:
+  name: jnphyp2
+spec:
+  hostingNamespace: clusters
+  hostingCluster: local-cluster
+  infrastructure:
+    cloudProvider:
+      name: aws4jnp
+    configure: True
+    platform:
+      aws:
+        region: us-west-1
